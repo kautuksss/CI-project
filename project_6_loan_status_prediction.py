@@ -8,19 +8,15 @@ Original file is located at
 
 Importing the Dependencies
 """
-streamlit
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-joblib
+
 import numpy as np
 import pandas as pd
 import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn import svm
 from sklearn.metrics import accuracy_score
+streamlit run your_script.py
+
 
 """Data Collection and Processing"""
 
