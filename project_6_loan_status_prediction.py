@@ -85,8 +85,7 @@ print(X.shape, X_train.shape, X_test.shape)
 
 """Training the model:
 
-Support Vector Machine Model
-"""
+"""Support Vector Machine Model
 
 classifier = svm.SVC(kernel='linear')
 
