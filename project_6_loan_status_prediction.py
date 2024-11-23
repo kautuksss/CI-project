@@ -239,23 +239,23 @@ else:
     print("The model shows consistent performance across training and testing datasets.")
 
 from xgboost import XGBClassifier
- import pandas as pd
- from sklearn.preprocessing import LabelEncoder
- from sklearn.metrics import accuracy_score
- import pickle
- classifier.fit(X_train, Y_train)
- # Initialize the XGBoost classifier with support for categorical dat
- # Fit the model
- # XGBoost Accuracy
- X_train_pred = classifier.predict(X_train)
- X_training_data_accuracy = accuracy_score(X_train_pred, Y_train)
- print(f"XGBoost- Training Data Accuracy: {X_training_data_accuracy}")
- X_test_pred = classifier.predict(X_test)
- X_test_data_accuracy = accuracy_score(X_test_pred, Y_test)
- print(f"XGBoost- Test Data Accuracy: {X_test_data_accuracy}")
- # Save XGBoost Model
- xgb_filename = 'loan_status_xgb_model.pkl'
- pickle.dump(classifier, open(xgb_filename, 'wb'))
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import accuracy_score
+import pickle
+classifier.fit(X_train, Y_train)
+# Initialize the XGBoost classifier with support for categorical dat
+# Fit the model
+# XGBoost Accuracy
+X_train_pred = classifier.predict(X_train)
+X_training_data_accuracy = accuracy_score(X_train_pred, Y_train)
+print(f"XGBoost- Training Data Accuracy: {X_training_data_accuracy}")
+X_test_pred = classifier.predict(X_test)
+X_test_data_accuracy = accuracy_score(X_test_pred, Y_test)
+print(f"XGBoost- Test Data Accuracy: {X_test_data_accuracy}")
+# Save XGBoost Model
+xgb_filename = 'loan_status_xgb_model.pkl'
+pickle.dump(classifier, open(xgb_filename, 'wb'))
 
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
 
