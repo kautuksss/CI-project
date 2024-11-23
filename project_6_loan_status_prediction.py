@@ -19,7 +19,7 @@ from sklearn.metrics import accuracy_score
 """Data Collection and Processing"""
 
 # loading the dataset to pandas DataFrame
-loan_dataset = pd.read_csv('/absolute/path/to/train_u6lujuX_CVtuZ9i (1).csv')
+loan_dataset = pd.read_csv('/content/sample_data/train_u6lujuX_CVtuZ9i (1).csv')
 
 type(loan_dataset)
 
